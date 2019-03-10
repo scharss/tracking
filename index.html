@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>tracking</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!--  https://youtu.be/nRpBxiZMm0g-->
+<div id="app">
+  <l-map ref="map" :zoom="zoom" :center="center">
+    <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+    <l-marker v-for="user in users" :lat-lng="formatLocation(user.coords.latitude, user.coords.longitude)"></l-marker>
+    </l-map>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js'></script>
+<script src='https://unpkg.com/vue2-leaflet@1.0.1/dist/vue2-leaflet.js'></script>
+<script src='https://www.gstatic.com/firebasejs/4.13.0/firebase.js'></script>
+<script src='https://unpkg.com/vuefire/dist/vuefire.js'></script>
+
+  
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -17,8 +17,8 @@ new Vue({
       myUuid : localStorage.getItem('myUuid'),
       zoom:14,
       center: L.latLng(3.5289336, -76.2966477),
-      url:'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-      attribution:'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+      url:'https://{s}.tile.osm.org/{z}/{x}/{y}.png',
+      attribution:'&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
       marker: L.latLng(3.5289336, -76.2966477),
       watchPositionId : null
     }

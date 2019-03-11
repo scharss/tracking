@@ -38,7 +38,7 @@ new Vue({
     
   },
   firebase: {
-    users: userRefs.limitToLast(25)
+    users: userRefs.limitToLast(100)
   },
   methods:{
     successCoords(position) {
